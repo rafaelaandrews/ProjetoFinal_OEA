@@ -43,11 +43,5 @@ public class BolsaFamilia{
 	public void setNis(String nis){
 		this.nis = nis;
 	}
-	
-	public String getLinha(){
-		return nis + "\t" + uf + "\t" +  siafi + "\t" + municipio + "\t" + municipioCod + "\t" + funcaoCod + 
-		"\t" + subfuncaoCod + "\t" + programaCod + "\t" + nome + "\t" + fonte +
-		"\t" + parcelaMes + "\t" + competencia;
-	}
 
 }
