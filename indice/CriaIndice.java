@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class CriaIndice{
 	
-	//funçao hash
+	//funÃ§ao hash
 	public static long h(String chave){
 		return (Long.parseLong(chave))%17035859;
 	}
@@ -38,7 +38,7 @@ public class CriaIndice{
 			posicao = h(bolsa.getNis());
 			indice.seek(posicao*(linha.length()));
 			posicao1 = contador;
-			indice.writeBytes(bolsa.getLinha() + "\t" + posicao1 + "\t" + posicao + "\n");
+			indice.writeBytes(linha + "\t" + posicao1 + "\t" + posicao + "\n");
 			contador += 1;
 		}
 	}
